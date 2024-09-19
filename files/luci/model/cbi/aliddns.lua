@@ -52,8 +52,11 @@ iface6.rmempty = true
 main = e:option(Value, "main_domain", translate("Main Domain"), translate("For example: test.github.com -> github.com"))
 main.rmempty = false
 
-sub = e:option(Value, "sub_domain", translate("Sub Domain"), translate("For example: test.github.com -> test"))
-sub.rmempty = false
+ip4_sub = e:option(Value, "ip4_sub_domain", translate("IPv4 Sub Domain"), translate("For example: test.github.com -> test"))
+ip4_sub.rmempty = false
+
+ip6_sub = e:option(Value, "ip6_sub_domain", translate("IPv6 Sub Domain"), translate("For example: test.github.com -> test"))
+ip6_sub.rmempty = false
 
 time = e:option(Value, "time", translate("Inspection Time"), translate("Unit: Minute, Range: 1-59"))
 time.rmempty = false
